@@ -1,0 +1,123 @@
+{
+  "aarav": {
+    "persona_key": "aarav",
+    "name": "Aarav Mehta",
+    "tagline": "Final-year B.Tech (CSE), Tier-2 college, Nagpur",
+    "avatar_color": "#0070AD",
+    "story": "Aarav has 14 weeks until the TCS NQT window opens. He codes a little, knows enough SQL to be dangerous, and has never finished a DSA sheet. Budget for prep: zero rupees.",
+    "onboarding": {
+      "name": "Aarav Mehta",
+      "target_role": "Software Development Engineer",
+      "target_companies": ["TCS Digital", "Capgemini"],
+      "current_skills": { "Python": 3, "SQL": 2, "Data Structures & Algorithms": 1, "Aptitude": 2, "Java": 1, "Communication": 2 },
+      "weekly_hours": 12,
+      "deadline_weeks": 14,
+      "budget_mode": "free",
+      "placement_mode": "tcs_nqt",
+      "background": "cs",
+      "exam_blackouts": [{ "start_week": 7, "end_week": 8, "label": "End-semester exams" }]
+    },
+    "script_notes": [
+      "Skill-DNA shows Python as inferred-strong, DSA and aptitude as weak-to-unknown - the gap map should feel earned, not generic.",
+      "Target path should land near 0.7 feasibility: achievable, not comfortable.",
+      "Week-1 quiz is scripted to score 60 percent so the Coach agent has a real trigger to react to.",
+      "Week-2 'missed week' is the catch-up replanning centrepiece - critical-path topics protected, optional ones deferred."
+    ]
+  },
+  "priya": {
+    "persona_key": "priya",
+    "name": "Priya Raman",
+    "tagline": "Final-year B.Tech (CSE), Tier-1 college, Chennai",
+    "avatar_color": "#17ABDA",
+    "story": "Priya already codes well and wants the Capgemini Exceller process specifically. Ten weeks, twenty hours a week, and a small budget for one paid resource if it earns its place.",
+    "onboarding": {
+      "name": "Priya Raman",
+      "target_role": "Capgemini Technology Analyst",
+      "target_companies": ["Capgemini", "Infosys"],
+      "current_skills": { "Python": 4, "Data Structures & Algorithms": 3, "System Design": 1, "SQL": 3, "Object-Oriented Programming": 4, "Communication": 3 },
+      "weekly_hours": 20,
+      "deadline_weeks": 10,
+      "budget_mode": "paid",
+      "placement_mode": "cap_exceller",
+      "background": "cs",
+      "exam_blackouts": []
+    },
+    "script_notes": [
+      "Strong base profile - most foundation nodes should resolve to known/inferred quickly, leaving headroom for the Stretch path.",
+      "Stretch path should clear feasibility with advanced DSA and System Design surfacing in week one.",
+      "Good contrast persona for 'the system does not pad a strong learner's plan with busywork'."
+    ]
+  },
+  "rohan": {
+    "persona_key": "rohan",
+    "name": "Rohan Verma",
+    "tagline": "MCA graduate, re-skilling toward Data Analyst roles",
+    "avatar_color": "#5B7184",
+    "story": "Rohan finished his MCA without a strong CS core. He is comfortable in Excel, can write a SQL query, and wants a Data Analyst seat at TCS. Twenty weeks, eight hours a week, zero budget.",
+    "onboarding": {
+      "name": "Rohan Verma",
+      "target_role": "Data Analyst",
+      "target_companies": ["TCS", "Capgemini"],
+      "current_skills": { "Excel": 4, "SQL": 3, "Python": 1, "Statistics": 2, "Data Visualization": 1, "Communication": 3 },
+      "weekly_hours": 8,
+      "deadline_weeks": 20,
+      "budget_mode": "free",
+      "placement_mode": "general",
+      "background": "non_cs",
+      "exam_blackouts": []
+    },
+    "script_notes": [
+      "Background = non_cs should switch on the Re-Skiller Bridge framing - Python and core-CS bridge nodes inserted ahead of the standard Data Analyst chain.",
+      "Long runway (20 weeks) at low weekly hours (8) is the realism test: the safe path should be the one flagged feasible.",
+      "Good persona for showing the system *not* recommending Deep Learning before someone can write a for-loop."
+    ]
+  },
+  "sneha": {
+    "persona_key": "sneha",
+    "name": "Sneha Iyer",
+    "tagline": "M.Sc Statistics, Tier-2 college, Coimbatore",
+    "avatar_color": "#0B4F6C",
+    "story": "Sneha can already read a regression table better than most of her batch, but she has never written a script anyone else had to run. Eighteen weeks until the InfyTQ window, seventeen hours a week, and a small budget for one course that earns its place.",
+    "onboarding": {
+      "name": "Sneha Iyer",
+      "target_role": "Data Scientist",
+      "target_companies": ["Capgemini", "Mu Sigma"],
+      "current_skills": { "Statistics": 4, "Python": 2, "SQL": 3, "Data Visualization": 2, "Data Structures & Algorithms": 1, "Communication": 3 },
+      "weekly_hours": 17,
+      "deadline_weeks": 18,
+      "budget_mode": "paid",
+      "placement_mode": "infytq",
+      "background": "other",
+      "exam_blackouts": [{ "start_week": 9, "end_week": 9, "label": "University viva week" }]
+    },
+    "script_notes": [
+      "Statistics rated 4 should ripple into inferred-known coverage on the Data & Intelligence axis before a single hour of new study - the gap map should visibly credit what she already has.",
+      "Data Structures & Algorithms at 1 is the honest tension in this persona: a Data Scientist track still opens through the same programming-foundation nodes an SDE track does, and the plan should say so plainly rather than skip ahead to modelling.",
+      "Good persona for surfacing the MLOps-to-cloud-fundamentals prerequisite the validator's checks were written to confirm - her path runs straight through it."
+    ]
+  },
+  "vikram": {
+    "persona_key": "vikram",
+    "name": "Vikram Nair",
+    "tagline": "Diploma-to-B.E. lateral entry, Tier-3 college, Indore",
+    "avatar_color": "#3D8C6C",
+    "story": "Vikram builds landing pages for two shops in his neighbourhood and was fairly sure that counted as 'full stack' until a friend asked what runs behind the contact form. Twelve weeks to the Wipro NLTH window, eighteen hours a week, no budget for courses.",
+    "onboarding": {
+      "name": "Vikram Nair",
+      "target_role": "Full Stack Developer",
+      "target_companies": ["Capgemini", "Wipro"],
+      "current_skills": { "JavaScript": 3, "Object-Oriented Programming": 3, "Python": 2, "SQL": 2, "Data Structures & Algorithms": 2, "Communication": 3 },
+      "weekly_hours": 18,
+      "deadline_weeks": 12,
+      "budget_mode": "free",
+      "placement_mode": "wipro_nlth",
+      "background": "diploma",
+      "exam_blackouts": []
+    },
+    "script_notes": [
+      "JavaScript at 3 should not over-credit backend depth - the gap map should still show real ground on the server and database side, exactly the blind spot in his own self-description.",
+      "Free budget plus a twelve-week runway makes this the tightest feasibility story of the five - the safe path doing real, visible work is the point of including it.",
+      "Diploma-entry background is the last of the four onboarding 'background' values the demo set had not yet exercised."
+    ]
+  }
+}

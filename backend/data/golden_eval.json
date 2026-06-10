@@ -1,0 +1,1255 @@
+{
+  "version": 1,
+  "rows": [
+    {
+      "id": "golden-001",
+      "label": "Software Development Engineer / weak profile / 8w @ 22h",
+      "input": {
+        "name": "Golden Scenario 001",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Python": 2,
+          "Java": 1,
+          "Excel": 2,
+          "JavaScript": 1
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 8,
+        "budget_mode": "paid",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-002",
+      "label": "Data Analyst / mixed profile / 8w @ 10h",
+      "input": {
+        "name": "Golden Scenario 002",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "SQL": 4,
+          "Aptitude": 3,
+          "Statistics": 2,
+          "System Design": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 8,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-003",
+      "label": "Capgemini Technology Analyst / strong profile / 8w @ 14h",
+      "input": {
+        "name": "Golden Scenario 003",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Structures & Algorithms": 3,
+          "Communication": 3,
+          "Object-Oriented Programming": 4,
+          "Data Visualization": 5
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 8,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-004",
+      "label": "Data Scientist / weak profile / 20w @ 10h",
+      "input": {
+        "name": "Golden Scenario 004",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Java": 2,
+          "Excel": 1,
+          "JavaScript": 2,
+          "Python": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 20,
+        "budget_mode": "paid",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-005",
+      "label": "Full Stack Developer / mixed profile / 10w @ 6h",
+      "input": {
+        "name": "Golden Scenario 005",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Aptitude": 4,
+          "Statistics": 3,
+          "System Design": 2,
+          "SQL": 1
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 10,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-006",
+      "label": "Software Development Engineer / strong profile / 16w @ 10h",
+      "input": {
+        "name": "Golden Scenario 006",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Communication": 5,
+          "Object-Oriented Programming": 3,
+          "Data Visualization": 4,
+          "Data Structures & Algorithms": 5
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 16,
+        "budget_mode": "free",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-007",
+      "label": "Data Analyst / weak profile / 23w @ 18h",
+      "input": {
+        "name": "Golden Scenario 007",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Excel": 2,
+          "JavaScript": 1,
+          "Python": 2,
+          "Java": 1
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 23,
+        "budget_mode": "paid",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-008",
+      "label": "Capgemini Technology Analyst / mixed profile / 13w @ 6h",
+      "input": {
+        "name": "Golden Scenario 008",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Statistics": 4,
+          "System Design": 3,
+          "SQL": 2,
+          "Aptitude": 1
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 13,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-009",
+      "label": "Data Scientist / strong profile / 15w @ 6h",
+      "input": {
+        "name": "Golden Scenario 009",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Object-Oriented Programming": 4,
+          "Data Visualization": 5,
+          "Data Structures & Algorithms": 3,
+          "Communication": 4
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 15,
+        "budget_mode": "free",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-010",
+      "label": "Full Stack Developer / weak profile / 13w @ 10h",
+      "input": {
+        "name": "Golden Scenario 010",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "JavaScript": 2,
+          "Python": 1,
+          "Java": 2,
+          "Excel": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 13,
+        "budget_mode": "paid",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-011",
+      "label": "Software Development Engineer / mixed profile / 17w @ 22h",
+      "input": {
+        "name": "Golden Scenario 011",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "System Design": 4,
+          "SQL": 3,
+          "Aptitude": 2,
+          "Statistics": 1
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 17,
+        "budget_mode": "free",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-012",
+      "label": "Data Analyst / strong profile / 9w @ 18h",
+      "input": {
+        "name": "Golden Scenario 012",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Visualization": 3,
+          "Data Structures & Algorithms": 4,
+          "Communication": 5,
+          "Object-Oriented Programming": 3
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 9,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-013",
+      "label": "Capgemini Technology Analyst / weak profile / 14w @ 14h",
+      "input": {
+        "name": "Golden Scenario 013",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Python": 2,
+          "Java": 1,
+          "Excel": 2,
+          "JavaScript": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 14,
+        "budget_mode": "paid",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-014",
+      "label": "Data Scientist / mixed profile / 20w @ 6h",
+      "input": {
+        "name": "Golden Scenario 014",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "SQL": 4,
+          "Aptitude": 3,
+          "Statistics": 2,
+          "System Design": 1
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 20,
+        "budget_mode": "free",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-015",
+      "label": "Full Stack Developer / strong profile / 10w @ 18h",
+      "input": {
+        "name": "Golden Scenario 015",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Structures & Algorithms": 3,
+          "Communication": 4,
+          "Object-Oriented Programming": 5,
+          "Data Visualization": 3
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 10,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-016",
+      "label": "Software Development Engineer / weak profile / 13w @ 18h",
+      "input": {
+        "name": "Golden Scenario 016",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Java": 2,
+          "Excel": 1,
+          "JavaScript": 2,
+          "Python": 1
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 13,
+        "budget_mode": "paid",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-017",
+      "label": "Data Analyst / mixed profile / 16w @ 22h",
+      "input": {
+        "name": "Golden Scenario 017",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Aptitude": 4,
+          "Statistics": 3,
+          "System Design": 2,
+          "SQL": 1
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 16,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-018",
+      "label": "Capgemini Technology Analyst / strong profile / 15w @ 6h",
+      "input": {
+        "name": "Golden Scenario 018",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Communication": 3,
+          "Object-Oriented Programming": 3,
+          "Data Visualization": 4,
+          "Data Structures & Algorithms": 5
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 15,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-019",
+      "label": "Data Scientist / weak profile / 21w @ 14h",
+      "input": {
+        "name": "Golden Scenario 019",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Excel": 2,
+          "JavaScript": 1,
+          "Python": 2,
+          "Java": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 21,
+        "budget_mode": "paid",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-020",
+      "label": "Full Stack Developer / mixed profile / 15w @ 14h",
+      "input": {
+        "name": "Golden Scenario 020",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Statistics": 4,
+          "System Design": 3,
+          "SQL": 2,
+          "Aptitude": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 15,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-021",
+      "label": "Software Development Engineer / strong profile / 9w @ 10h",
+      "input": {
+        "name": "Golden Scenario 021",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Object-Oriented Programming": 3,
+          "Data Visualization": 4,
+          "Data Structures & Algorithms": 5,
+          "Communication": 3
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 9,
+        "budget_mode": "free",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-022",
+      "label": "Data Analyst / weak profile / 8w @ 10h",
+      "input": {
+        "name": "Golden Scenario 022",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "JavaScript": 2,
+          "Python": 1,
+          "Java": 2,
+          "Excel": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 8,
+        "budget_mode": "paid",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-023",
+      "label": "Capgemini Technology Analyst / mixed profile / 17w @ 10h",
+      "input": {
+        "name": "Golden Scenario 023",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "System Design": 4,
+          "SQL": 3,
+          "Aptitude": 2,
+          "Statistics": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 17,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-024",
+      "label": "Data Scientist / strong profile / 18w @ 10h",
+      "input": {
+        "name": "Golden Scenario 024",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Visualization": 3,
+          "Data Structures & Algorithms": 4,
+          "Communication": 5,
+          "Object-Oriented Programming": 3
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 18,
+        "budget_mode": "free",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-025",
+      "label": "Full Stack Developer / weak profile / 18w @ 18h",
+      "input": {
+        "name": "Golden Scenario 025",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Python": 2,
+          "Java": 1,
+          "Excel": 2,
+          "JavaScript": 1
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 18,
+        "budget_mode": "paid",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-026",
+      "label": "Software Development Engineer / mixed profile / 10w @ 18h",
+      "input": {
+        "name": "Golden Scenario 026",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "SQL": 4,
+          "Aptitude": 3,
+          "Statistics": 2,
+          "System Design": 1
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 10,
+        "budget_mode": "free",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-027",
+      "label": "Data Analyst / strong profile / 16w @ 22h",
+      "input": {
+        "name": "Golden Scenario 027",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Structures & Algorithms": 5,
+          "Communication": 3,
+          "Object-Oriented Programming": 4,
+          "Data Visualization": 5
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 16,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-028",
+      "label": "Capgemini Technology Analyst / weak profile / 22w @ 10h",
+      "input": {
+        "name": "Golden Scenario 028",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Java": 2,
+          "Excel": 1,
+          "JavaScript": 2,
+          "Python": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 22,
+        "budget_mode": "paid",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-029",
+      "label": "Data Scientist / mixed profile / 15w @ 14h",
+      "input": {
+        "name": "Golden Scenario 029",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Aptitude": 4,
+          "Statistics": 3,
+          "System Design": 2,
+          "SQL": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 15,
+        "budget_mode": "free",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-030",
+      "label": "Full Stack Developer / strong profile / 15w @ 6h",
+      "input": {
+        "name": "Golden Scenario 030",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Communication": 3,
+          "Object-Oriented Programming": 4,
+          "Data Visualization": 5,
+          "Data Structures & Algorithms": 3
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 15,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-031",
+      "label": "Software Development Engineer / weak profile / 22w @ 14h",
+      "input": {
+        "name": "Golden Scenario 031",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Excel": 2,
+          "JavaScript": 1,
+          "Python": 2,
+          "Java": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 22,
+        "budget_mode": "paid",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-032",
+      "label": "Data Analyst / mixed profile / 23w @ 10h",
+      "input": {
+        "name": "Golden Scenario 032",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Statistics": 4,
+          "System Design": 3,
+          "SQL": 2,
+          "Aptitude": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 23,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-033",
+      "label": "Capgemini Technology Analyst / strong profile / 11w @ 10h",
+      "input": {
+        "name": "Golden Scenario 033",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Object-Oriented Programming": 4,
+          "Data Visualization": 5,
+          "Data Structures & Algorithms": 5,
+          "Communication": 3
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 11,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-034",
+      "label": "Data Scientist / weak profile / 21w @ 10h",
+      "input": {
+        "name": "Golden Scenario 034",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "JavaScript": 2,
+          "Python": 1,
+          "Java": 2,
+          "Excel": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 21,
+        "budget_mode": "paid",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-035",
+      "label": "Full Stack Developer / mixed profile / 23w @ 14h",
+      "input": {
+        "name": "Golden Scenario 035",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "System Design": 4,
+          "SQL": 3,
+          "Aptitude": 2,
+          "Statistics": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 23,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-036",
+      "label": "Software Development Engineer / strong profile / 18w @ 18h",
+      "input": {
+        "name": "Golden Scenario 036",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Visualization": 5,
+          "Data Structures & Algorithms": 3,
+          "Communication": 3,
+          "Object-Oriented Programming": 4
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 18,
+        "budget_mode": "free",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-037",
+      "label": "Data Analyst / weak profile / 9w @ 18h",
+      "input": {
+        "name": "Golden Scenario 037",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Python": 2,
+          "Java": 1,
+          "Excel": 2,
+          "JavaScript": 1
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 9,
+        "budget_mode": "paid",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-038",
+      "label": "Capgemini Technology Analyst / mixed profile / 12w @ 22h",
+      "input": {
+        "name": "Golden Scenario 038",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "SQL": 4,
+          "Aptitude": 3,
+          "Statistics": 2,
+          "System Design": 1
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 12,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-039",
+      "label": "Data Scientist / strong profile / 12w @ 10h",
+      "input": {
+        "name": "Golden Scenario 039",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Structures & Algorithms": 4,
+          "Communication": 4,
+          "Object-Oriented Programming": 5,
+          "Data Visualization": 3
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 12,
+        "budget_mode": "free",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-040",
+      "label": "Full Stack Developer / weak profile / 10w @ 10h",
+      "input": {
+        "name": "Golden Scenario 040",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Java": 2,
+          "Excel": 1,
+          "JavaScript": 2,
+          "Python": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 10,
+        "budget_mode": "paid",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-041",
+      "label": "Software Development Engineer / mixed profile / 20w @ 18h",
+      "input": {
+        "name": "Golden Scenario 041",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Aptitude": 4,
+          "Statistics": 3,
+          "System Design": 2,
+          "SQL": 1
+        },
+        "weekly_hours": 18,
+        "deadline_weeks": 20,
+        "budget_mode": "free",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-042",
+      "label": "Data Analyst / strong profile / 10w @ 10h",
+      "input": {
+        "name": "Golden Scenario 042",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Communication": 4,
+          "Object-Oriented Programming": 4,
+          "Data Visualization": 5,
+          "Data Structures & Algorithms": 3
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 10,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-043",
+      "label": "Capgemini Technology Analyst / weak profile / 12w @ 10h",
+      "input": {
+        "name": "Golden Scenario 043",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Excel": 2,
+          "JavaScript": 1,
+          "Python": 2,
+          "Java": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 12,
+        "budget_mode": "paid",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-044",
+      "label": "Data Scientist / mixed profile / 22w @ 6h",
+      "input": {
+        "name": "Golden Scenario 044",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Statistics": 4,
+          "System Design": 3,
+          "SQL": 2,
+          "Aptitude": 1
+        },
+        "weekly_hours": 6,
+        "deadline_weeks": 22,
+        "budget_mode": "free",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-045",
+      "label": "Full Stack Developer / strong profile / 21w @ 14h",
+      "input": {
+        "name": "Golden Scenario 045",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Object-Oriented Programming": 5,
+          "Data Visualization": 3,
+          "Data Structures & Algorithms": 4,
+          "Communication": 5
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 21,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-046",
+      "label": "Software Development Engineer / weak profile / 18w @ 22h",
+      "input": {
+        "name": "Golden Scenario 046",
+        "target_role": "Software Development Engineer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "JavaScript": 2,
+          "Python": 1,
+          "Java": 2,
+          "Excel": 1
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 18,
+        "budget_mode": "paid",
+        "placement_mode": "tcs_nqt",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-047",
+      "label": "Data Analyst / mixed profile / 9w @ 10h",
+      "input": {
+        "name": "Golden Scenario 047",
+        "target_role": "Data Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "System Design": 4,
+          "SQL": 3,
+          "Aptitude": 2,
+          "Statistics": 1
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 9,
+        "budget_mode": "free",
+        "placement_mode": "cap_exceller",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-048",
+      "label": "Capgemini Technology Analyst / strong profile / 17w @ 10h",
+      "input": {
+        "name": "Golden Scenario 048",
+        "target_role": "Capgemini Technology Analyst",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Data Visualization": 5,
+          "Data Structures & Algorithms": 3,
+          "Communication": 3,
+          "Object-Oriented Programming": 4
+        },
+        "weekly_hours": 10,
+        "deadline_weeks": 17,
+        "budget_mode": "free",
+        "placement_mode": "infytq",
+        "background": "cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-049",
+      "label": "Data Scientist / weak profile / 9w @ 14h",
+      "input": {
+        "name": "Golden Scenario 049",
+        "target_role": "Data Scientist",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "Python": 2,
+          "Java": 1,
+          "Excel": 2,
+          "JavaScript": 1
+        },
+        "weekly_hours": 14,
+        "deadline_weeks": 9,
+        "budget_mode": "paid",
+        "placement_mode": "wipro_nlth",
+        "background": "non_cs",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    },
+    {
+      "id": "golden-050",
+      "label": "Full Stack Developer / mixed profile / 19w @ 22h",
+      "input": {
+        "name": "Golden Scenario 050",
+        "target_role": "Full Stack Developer",
+        "target_companies": [
+          "Capgemini"
+        ],
+        "current_skills": {
+          "SQL": 4,
+          "Aptitude": 3,
+          "Statistics": 2,
+          "System Design": 1
+        },
+        "weekly_hours": 22,
+        "deadline_weeks": 19,
+        "budget_mode": "free",
+        "placement_mode": "general",
+        "background": "diploma",
+        "exam_blackouts": []
+      },
+      "trust_floor": 0.55,
+      "max_bloom_regression": 1
+    }
+  ]
+}

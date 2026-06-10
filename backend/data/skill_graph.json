@@ -1,0 +1,2457 @@
+{
+  "generated_from": "backend/data/skill_chains.py",
+  "node_count": 112,
+  "edge_count": 119,
+  "is_dag": true,
+  "role_tracks": {
+    "Software Development Engineer": [
+      "foundation",
+      "sde",
+      "aptitude"
+    ],
+    "Data Analyst": [
+      "foundation",
+      "data_analyst",
+      "aptitude"
+    ],
+    "Capgemini Technology Analyst": [
+      "foundation",
+      "capgemini_tech",
+      "sde",
+      "aptitude"
+    ],
+    "Data Scientist": [
+      "foundation",
+      "data_scientist",
+      "aptitude"
+    ],
+    "Full Stack Developer": [
+      "foundation",
+      "full_stack",
+      "aptitude"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "fnd.computing_basics",
+      "name": "Computing & Internet Basics",
+      "bloom_level": 1,
+      "estimated_hours": 4,
+      "difficulty": "beginner",
+      "family": "Digital Literacy",
+      "tags": [
+        "foundation"
+      ],
+      "prerequisites": [],
+      "unlocks": [
+        "bridge.cs_concepts_bridge",
+        "da.excel_analysis",
+        "fnd.prog_logic",
+        "fnd.typing_tools",
+        "fs.html_css",
+        "xtra.cloud_computing"
+      ]
+    },
+    {
+      "id": "fnd.typing_tools",
+      "name": "Dev Environment & Tooling Setup",
+      "bloom_level": 1,
+      "estimated_hours": 3,
+      "difficulty": "beginner",
+      "family": "Digital Literacy",
+      "tags": [
+        "foundation",
+        "tools"
+      ],
+      "prerequisites": [
+        "fnd.computing_basics"
+      ],
+      "unlocks": [
+        "fnd.git_basics"
+      ]
+    },
+    {
+      "id": "fnd.prog_logic",
+      "name": "Programming Logic Building",
+      "bloom_level": 2,
+      "estimated_hours": 10,
+      "difficulty": "beginner",
+      "family": "Programming & Development",
+      "tags": [
+        "foundation",
+        "programming"
+      ],
+      "prerequisites": [
+        "fnd.computing_basics"
+      ],
+      "unlocks": [
+        "cap.java_core",
+        "da.python_pandas",
+        "ds.python_for_ds",
+        "sde.python_core",
+        "xtra.genai_prompting"
+      ]
+    },
+    {
+      "id": "fnd.git_basics",
+      "name": "Git & Version Control Basics",
+      "bloom_level": 2,
+      "estimated_hours": 6,
+      "difficulty": "beginner",
+      "family": "Tools & Collaboration",
+      "tags": [
+        "tools",
+        "collaboration"
+      ],
+      "prerequisites": [
+        "fnd.typing_tools"
+      ],
+      "unlocks": [
+        "fnd.communication_basics",
+        "fs.git_collab"
+      ]
+    },
+    {
+      "id": "fnd.communication_basics",
+      "name": "Workplace Communication Basics",
+      "bloom_level": 1,
+      "estimated_hours": 4,
+      "difficulty": "beginner",
+      "family": "Communication",
+      "tags": [
+        "softskills",
+        "communication"
+      ],
+      "prerequisites": [
+        "fnd.git_basics"
+      ],
+      "unlocks": [
+        "apt.resume_linkedin",
+        "apt.verbal_grammar",
+        "cap.agile_scrum",
+        "xtra.email_etiquette_teamwork",
+        "xtra.industry_awareness",
+        "xtra.technical_writing"
+      ]
+    },
+    {
+      "id": "sde.python_core",
+      "name": "Python Programming Core",
+      "bloom_level": 2,
+      "estimated_hours": 16,
+      "difficulty": "beginner",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "fnd.prog_logic"
+      ],
+      "unlocks": [
+        "sde.control_flow"
+      ]
+    },
+    {
+      "id": "sde.control_flow",
+      "name": "Control Flow, Functions & Modules",
+      "bloom_level": 2,
+      "estimated_hours": 10,
+      "difficulty": "beginner",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "sde.python_core"
+      ],
+      "unlocks": [
+        "sde.dbms_sql",
+        "sde.oop",
+        "sde.os_basics"
+      ]
+    },
+    {
+      "id": "sde.oop",
+      "name": "Object-Oriented Programming",
+      "bloom_level": 3,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "sde.control_flow"
+      ],
+      "unlocks": [
+        "sde.arrays_strings",
+        "sde.lld_design_patterns"
+      ]
+    },
+    {
+      "id": "sde.arrays_strings",
+      "name": "Arrays & Strings",
+      "bloom_level": 3,
+      "estimated_hours": 14,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.oop"
+      ],
+      "unlocks": [
+        "sde.complexity"
+      ]
+    },
+    {
+      "id": "sde.complexity",
+      "name": "Time & Space Complexity (Big-O)",
+      "bloom_level": 3,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.arrays_strings"
+      ],
+      "unlocks": [
+        "sde.recursion"
+      ]
+    },
+    {
+      "id": "sde.recursion",
+      "name": "Recursion & Backtracking Foundations",
+      "bloom_level": 3,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.complexity"
+      ],
+      "unlocks": [
+        "sde.dynamic_programming",
+        "sde.linked_lists"
+      ]
+    },
+    {
+      "id": "sde.linked_lists",
+      "name": "Linked Lists",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.recursion"
+      ],
+      "unlocks": [
+        "sde.stacks_queues"
+      ]
+    },
+    {
+      "id": "sde.stacks_queues",
+      "name": "Stacks & Queues",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.linked_lists"
+      ],
+      "unlocks": [
+        "sde.hashing"
+      ]
+    },
+    {
+      "id": "sde.hashing",
+      "name": "Hashing & Hash Maps",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.stacks_queues"
+      ],
+      "unlocks": [
+        "sde.trees"
+      ]
+    },
+    {
+      "id": "sde.trees",
+      "name": "Trees & Binary Search Trees",
+      "bloom_level": 4,
+      "estimated_hours": 14,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.hashing"
+      ],
+      "unlocks": [
+        "sde.heaps"
+      ]
+    },
+    {
+      "id": "sde.heaps",
+      "name": "Heaps & Priority Queues",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.trees"
+      ],
+      "unlocks": [
+        "sde.graphs"
+      ]
+    },
+    {
+      "id": "sde.graphs",
+      "name": "Graphs: BFS, DFS & Shortest Paths",
+      "bloom_level": 4,
+      "estimated_hours": 16,
+      "difficulty": "advanced",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa"
+      ],
+      "prerequisites": [
+        "sde.heaps"
+      ],
+      "unlocks": [
+        "sde.sorting_searching"
+      ]
+    },
+    {
+      "id": "sde.sorting_searching",
+      "name": "Sorting & Searching Algorithms",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa",
+        "algorithms"
+      ],
+      "prerequisites": [
+        "sde.graphs"
+      ],
+      "unlocks": [
+        "sde.greedy"
+      ]
+    },
+    {
+      "id": "sde.greedy",
+      "name": "Greedy Algorithms",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "advanced",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa",
+        "algorithms"
+      ],
+      "prerequisites": [
+        "sde.sorting_searching"
+      ],
+      "unlocks": [
+        "sde.dynamic_programming"
+      ]
+    },
+    {
+      "id": "sde.dynamic_programming",
+      "name": "Dynamic Programming",
+      "bloom_level": 5,
+      "estimated_hours": 18,
+      "difficulty": "advanced",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa",
+        "algorithms"
+      ],
+      "prerequisites": [
+        "sde.greedy",
+        "sde.recursion"
+      ],
+      "unlocks": [
+        "sde.advanced_patterns",
+        "sde.competitive_patterns"
+      ]
+    },
+    {
+      "id": "sde.advanced_patterns",
+      "name": "Advanced Problem-Solving Patterns",
+      "bloom_level": 5,
+      "estimated_hours": 12,
+      "difficulty": "advanced",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa",
+        "algorithms",
+        "placement"
+      ],
+      "prerequisites": [
+        "sde.dynamic_programming"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "sde.dbms_sql",
+      "name": "Databases & SQL Fundamentals",
+      "bloom_level": 3,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "sde.control_flow"
+      ],
+      "unlocks": [
+        "sde.rest_apis"
+      ]
+    },
+    {
+      "id": "sde.os_basics",
+      "name": "Operating Systems Essentials",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Systems",
+      "tags": [
+        "systems"
+      ],
+      "prerequisites": [
+        "sde.control_flow"
+      ],
+      "unlocks": [
+        "sde.networks_basics"
+      ]
+    },
+    {
+      "id": "sde.networks_basics",
+      "name": "Computer Networks Essentials",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Systems",
+      "tags": [
+        "systems"
+      ],
+      "prerequisites": [
+        "sde.os_basics"
+      ],
+      "unlocks": [
+        "sde.hld_system_design",
+        "sde.lld_design_patterns"
+      ]
+    },
+    {
+      "id": "sde.lld_design_patterns",
+      "name": "Low-Level Design & Design Patterns",
+      "bloom_level": 5,
+      "estimated_hours": 14,
+      "difficulty": "advanced",
+      "family": "Software Design",
+      "tags": [
+        "design"
+      ],
+      "prerequisites": [
+        "sde.networks_basics",
+        "sde.oop"
+      ],
+      "unlocks": [
+        "sde.hld_system_design",
+        "sde.rest_apis"
+      ]
+    },
+    {
+      "id": "sde.rest_apis",
+      "name": "REST API Design & Development",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Software Design",
+      "tags": [
+        "backend"
+      ],
+      "prerequisites": [
+        "sde.dbms_sql",
+        "sde.lld_design_patterns"
+      ],
+      "unlocks": [
+        "sde.hld_system_design"
+      ]
+    },
+    {
+      "id": "sde.hld_system_design",
+      "name": "High-Level Design & System Design Basics",
+      "bloom_level": 5,
+      "estimated_hours": 16,
+      "difficulty": "advanced",
+      "family": "Software Design",
+      "tags": [
+        "design"
+      ],
+      "prerequisites": [
+        "sde.lld_design_patterns",
+        "sde.networks_basics",
+        "sde.rest_apis"
+      ],
+      "unlocks": [
+        "sde.scalability_patterns",
+        "sde.testing_fundamentals"
+      ]
+    },
+    {
+      "id": "sde.testing_fundamentals",
+      "name": "Unit Testing & Code Quality",
+      "bloom_level": 4,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Software Quality",
+      "tags": [
+        "quality"
+      ],
+      "prerequisites": [
+        "sde.hld_system_design"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "sde.scalability_patterns",
+      "name": "Scalability & Distributed Systems Patterns",
+      "bloom_level": 6,
+      "estimated_hours": 14,
+      "difficulty": "advanced",
+      "family": "Software Design",
+      "tags": [
+        "design",
+        "stretch"
+      ],
+      "prerequisites": [
+        "sde.hld_system_design"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "sde.competitive_patterns",
+      "name": "Competitive Programming Patterns",
+      "bloom_level": 5,
+      "estimated_hours": 12,
+      "difficulty": "advanced",
+      "family": "Data Structures & Algorithms",
+      "tags": [
+        "dsa",
+        "stretch"
+      ],
+      "prerequisites": [
+        "sde.dynamic_programming"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "da.excel_analysis",
+      "name": "Excel for Data Analysis",
+      "bloom_level": 2,
+      "estimated_hours": 10,
+      "difficulty": "beginner",
+      "family": "Data & Databases",
+      "tags": [
+        "data",
+        "tools"
+      ],
+      "prerequisites": [
+        "fnd.computing_basics"
+      ],
+      "unlocks": [
+        "da.sql_fundamentals"
+      ]
+    },
+    {
+      "id": "da.sql_fundamentals",
+      "name": "SQL Fundamentals",
+      "bloom_level": 2,
+      "estimated_hours": 12,
+      "difficulty": "beginner",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "da.excel_analysis"
+      ],
+      "unlocks": [
+        "da.sql_joins_agg"
+      ]
+    },
+    {
+      "id": "da.sql_joins_agg",
+      "name": "SQL Joins, Aggregation & Subqueries",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "da.sql_fundamentals"
+      ],
+      "unlocks": [
+        "da.advanced_sql"
+      ]
+    },
+    {
+      "id": "da.advanced_sql",
+      "name": "Advanced SQL: Window Functions & CTEs",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "da.sql_joins_agg"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "da.python_pandas",
+      "name": "Python for Data Analysis (Pandas & NumPy)",
+      "bloom_level": 3,
+      "estimated_hours": 16,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data",
+        "programming"
+      ],
+      "prerequisites": [
+        "fnd.prog_logic"
+      ],
+      "unlocks": [
+        "da.data_cleaning"
+      ]
+    },
+    {
+      "id": "da.data_cleaning",
+      "name": "Data Cleaning & Wrangling",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "da.python_pandas"
+      ],
+      "unlocks": [
+        "da.descriptive_stats"
+      ]
+    },
+    {
+      "id": "da.descriptive_stats",
+      "name": "Descriptive Statistics",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Statistics & Analytics",
+      "tags": [
+        "statistics"
+      ],
+      "prerequisites": [
+        "da.data_cleaning"
+      ],
+      "unlocks": [
+        "da.business_metrics",
+        "da.inferential_stats"
+      ]
+    },
+    {
+      "id": "da.inferential_stats",
+      "name": "Inferential Statistics & Hypothesis Testing",
+      "bloom_level": 4,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Statistics & Analytics",
+      "tags": [
+        "statistics"
+      ],
+      "prerequisites": [
+        "da.descriptive_stats"
+      ],
+      "unlocks": [
+        "da.visualization_principles"
+      ]
+    },
+    {
+      "id": "da.visualization_principles",
+      "name": "Data Visualization Principles",
+      "bloom_level": 3,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Visualization & Storytelling",
+      "tags": [
+        "visualization"
+      ],
+      "prerequisites": [
+        "da.inferential_stats"
+      ],
+      "unlocks": [
+        "da.viz_tools"
+      ]
+    },
+    {
+      "id": "da.viz_tools",
+      "name": "Visualization with Matplotlib & Seaborn",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Visualization & Storytelling",
+      "tags": [
+        "visualization",
+        "tools"
+      ],
+      "prerequisites": [
+        "da.visualization_principles"
+      ],
+      "unlocks": [
+        "da.bi_tools"
+      ]
+    },
+    {
+      "id": "da.bi_tools",
+      "name": "Power BI / Tableau Fundamentals",
+      "bloom_level": 4,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Visualization & Storytelling",
+      "tags": [
+        "tools",
+        "visualization"
+      ],
+      "prerequisites": [
+        "da.viz_tools"
+      ],
+      "unlocks": [
+        "da.storytelling"
+      ]
+    },
+    {
+      "id": "da.storytelling",
+      "name": "Storytelling with Data & Dashboards",
+      "bloom_level": 5,
+      "estimated_hours": 8,
+      "difficulty": "advanced",
+      "family": "Visualization & Storytelling",
+      "tags": [
+        "communication",
+        "visualization"
+      ],
+      "prerequisites": [
+        "da.bi_tools"
+      ],
+      "unlocks": [
+        "da.ab_testing"
+      ]
+    },
+    {
+      "id": "da.ab_testing",
+      "name": "A/B Testing & Experimentation Basics",
+      "bloom_level": 5,
+      "estimated_hours": 8,
+      "difficulty": "advanced",
+      "family": "Statistics & Analytics",
+      "tags": [
+        "statistics",
+        "stretch"
+      ],
+      "prerequisites": [
+        "da.storytelling"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "da.business_metrics",
+      "name": "Business Metrics, KPIs & Domain Context",
+      "bloom_level": 4,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Business Context",
+      "tags": [
+        "business"
+      ],
+      "prerequisites": [
+        "da.descriptive_stats"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "cap.java_core",
+      "name": "Java Programming Core",
+      "bloom_level": 2,
+      "estimated_hours": 16,
+      "difficulty": "beginner",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "fnd.prog_logic"
+      ],
+      "unlocks": [
+        "cap.java_oop"
+      ]
+    },
+    {
+      "id": "cap.java_oop",
+      "name": "Object-Oriented Programming in Java",
+      "bloom_level": 3,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "cap.java_core"
+      ],
+      "unlocks": [
+        "cap.collections_generics"
+      ]
+    },
+    {
+      "id": "cap.collections_generics",
+      "name": "Collections Framework & Generics",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "cap.java_oop"
+      ],
+      "unlocks": [
+        "cap.exceptions_io"
+      ]
+    },
+    {
+      "id": "cap.exceptions_io",
+      "name": "Exception Handling & File I/O",
+      "bloom_level": 3,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Programming & Development",
+      "tags": [
+        "programming"
+      ],
+      "prerequisites": [
+        "cap.collections_generics"
+      ],
+      "unlocks": [
+        "cap.dbms_normalization"
+      ]
+    },
+    {
+      "id": "cap.dbms_normalization",
+      "name": "DBMS Concepts & Normalization",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "cap.exceptions_io"
+      ],
+      "unlocks": [
+        "cap.jdbc_db"
+      ]
+    },
+    {
+      "id": "cap.jdbc_db",
+      "name": "JDBC & Database Connectivity",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data",
+        "backend"
+      ],
+      "prerequisites": [
+        "cap.dbms_normalization"
+      ],
+      "unlocks": [
+        "cap.spring_core"
+      ]
+    },
+    {
+      "id": "cap.spring_core",
+      "name": "Spring Core & Dependency Injection",
+      "bloom_level": 4,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Software Design",
+      "tags": [
+        "backend"
+      ],
+      "prerequisites": [
+        "cap.jdbc_db"
+      ],
+      "unlocks": [
+        "cap.spring_boot_rest"
+      ]
+    },
+    {
+      "id": "cap.spring_boot_rest",
+      "name": "Spring Boot & REST Microservices",
+      "bloom_level": 4,
+      "estimated_hours": 14,
+      "difficulty": "intermediate",
+      "family": "Software Design",
+      "tags": [
+        "backend"
+      ],
+      "prerequisites": [
+        "cap.spring_core"
+      ],
+      "unlocks": [
+        "cap.networks_enterprise"
+      ]
+    },
+    {
+      "id": "cap.networks_enterprise",
+      "name": "Computer Networks for Enterprise Systems",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Systems",
+      "tags": [
+        "systems"
+      ],
+      "prerequisites": [
+        "cap.spring_boot_rest"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "cap.agile_scrum",
+      "name": "Agile & Scrum Fundamentals",
+      "bloom_level": 2,
+      "estimated_hours": 5,
+      "difficulty": "beginner",
+      "family": "Process & Delivery",
+      "tags": [
+        "process"
+      ],
+      "prerequisites": [
+        "fnd.communication_basics"
+      ],
+      "unlocks": [
+        "cap.junit_testing"
+      ]
+    },
+    {
+      "id": "cap.junit_testing",
+      "name": "Unit Testing with JUnit & Mockito",
+      "bloom_level": 4,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Software Quality",
+      "tags": [
+        "quality"
+      ],
+      "prerequisites": [
+        "cap.agile_scrum"
+      ],
+      "unlocks": [
+        "cap.cloud_fundamentals"
+      ]
+    },
+    {
+      "id": "cap.cloud_fundamentals",
+      "name": "Cloud Fundamentals (Azure)",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Cloud & Platform",
+      "tags": [
+        "cloud"
+      ],
+      "prerequisites": [
+        "cap.junit_testing"
+      ],
+      "unlocks": [
+        "cap.genai_basics"
+      ]
+    },
+    {
+      "id": "cap.genai_basics",
+      "name": "GenAI & Agentic AI Foundations",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Emerging Tech",
+      "tags": [
+        "genai",
+        "capgemini-priority"
+      ],
+      "prerequisites": [
+        "cap.cloud_fundamentals"
+      ],
+      "unlocks": [
+        "cap.client_comm"
+      ]
+    },
+    {
+      "id": "cap.client_comm",
+      "name": "Client Communication & Enterprise Etiquette",
+      "bloom_level": 3,
+      "estimated_hours": 5,
+      "difficulty": "intermediate",
+      "family": "Communication",
+      "tags": [
+        "softskills"
+      ],
+      "prerequisites": [
+        "cap.genai_basics"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "ds.python_for_ds",
+      "name": "Python for Data Science",
+      "bloom_level": 2,
+      "estimated_hours": 14,
+      "difficulty": "beginner",
+      "family": "Programming & Development",
+      "tags": [
+        "programming",
+        "data"
+      ],
+      "prerequisites": [
+        "fnd.prog_logic"
+      ],
+      "unlocks": [
+        "ds.linear_algebra"
+      ]
+    },
+    {
+      "id": "ds.linear_algebra",
+      "name": "Linear Algebra Foundations",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Mathematics",
+      "tags": [
+        "mathematics"
+      ],
+      "prerequisites": [
+        "ds.python_for_ds"
+      ],
+      "unlocks": [
+        "ds.neural_networks",
+        "ds.probability_stats"
+      ]
+    },
+    {
+      "id": "ds.probability_stats",
+      "name": "Probability & Statistics for ML",
+      "bloom_level": 3,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Mathematics",
+      "tags": [
+        "statistics",
+        "mathematics"
+      ],
+      "prerequisites": [
+        "ds.linear_algebra"
+      ],
+      "unlocks": [
+        "ds.eda",
+        "ds.regression"
+      ]
+    },
+    {
+      "id": "ds.eda",
+      "name": "Exploratory Data Analysis",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "ds.probability_stats"
+      ],
+      "unlocks": [
+        "ds.cloud_for_ml",
+        "ds.feature_engineering"
+      ]
+    },
+    {
+      "id": "ds.feature_engineering",
+      "name": "Feature Engineering",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Machine Learning",
+      "tags": [
+        "data",
+        "ml"
+      ],
+      "prerequisites": [
+        "ds.eda"
+      ],
+      "unlocks": [
+        "ds.regression"
+      ]
+    },
+    {
+      "id": "ds.regression",
+      "name": "Supervised Learning: Regression",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Machine Learning",
+      "tags": [
+        "ml"
+      ],
+      "prerequisites": [
+        "ds.feature_engineering",
+        "ds.probability_stats"
+      ],
+      "unlocks": [
+        "ds.classification"
+      ]
+    },
+    {
+      "id": "ds.classification",
+      "name": "Supervised Learning: Classification",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Machine Learning",
+      "tags": [
+        "ml"
+      ],
+      "prerequisites": [
+        "ds.regression"
+      ],
+      "unlocks": [
+        "ds.model_evaluation"
+      ]
+    },
+    {
+      "id": "ds.model_evaluation",
+      "name": "Model Evaluation & Validation",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Machine Learning",
+      "tags": [
+        "ml"
+      ],
+      "prerequisites": [
+        "ds.classification"
+      ],
+      "unlocks": [
+        "ds.clustering"
+      ]
+    },
+    {
+      "id": "ds.clustering",
+      "name": "Unsupervised Learning: Clustering & Dimensionality Reduction",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Machine Learning",
+      "tags": [
+        "ml"
+      ],
+      "prerequisites": [
+        "ds.model_evaluation"
+      ],
+      "unlocks": [
+        "ds.ensemble_methods"
+      ]
+    },
+    {
+      "id": "ds.ensemble_methods",
+      "name": "Ensemble Methods (Bagging & Boosting)",
+      "bloom_level": 5,
+      "estimated_hours": 8,
+      "difficulty": "advanced",
+      "family": "Machine Learning",
+      "tags": [
+        "ml"
+      ],
+      "prerequisites": [
+        "ds.clustering"
+      ],
+      "unlocks": [
+        "ds.neural_networks"
+      ]
+    },
+    {
+      "id": "ds.neural_networks",
+      "name": "Neural Network Foundations",
+      "bloom_level": 4,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Deep Learning",
+      "tags": [
+        "deep-learning"
+      ],
+      "prerequisites": [
+        "ds.ensemble_methods",
+        "ds.linear_algebra"
+      ],
+      "unlocks": [
+        "ds.cnn"
+      ]
+    },
+    {
+      "id": "ds.cnn",
+      "name": "Deep Learning: CNNs for Vision",
+      "bloom_level": 5,
+      "estimated_hours": 14,
+      "difficulty": "advanced",
+      "family": "Deep Learning",
+      "tags": [
+        "deep-learning"
+      ],
+      "prerequisites": [
+        "ds.neural_networks"
+      ],
+      "unlocks": [
+        "ds.transformers_nlp"
+      ]
+    },
+    {
+      "id": "ds.transformers_nlp",
+      "name": "Deep Learning: Transformers & NLP",
+      "bloom_level": 5,
+      "estimated_hours": 16,
+      "difficulty": "advanced",
+      "family": "Deep Learning",
+      "tags": [
+        "deep-learning",
+        "nlp"
+      ],
+      "prerequisites": [
+        "ds.cnn"
+      ],
+      "unlocks": [
+        "ds.mlops"
+      ]
+    },
+    {
+      "id": "ds.cloud_for_ml",
+      "name": "Cloud Platforms for Machine Learning",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Cloud & Platform",
+      "tags": [
+        "cloud",
+        "mlops"
+      ],
+      "prerequisites": [
+        "ds.eda"
+      ],
+      "unlocks": [
+        "ds.mlops"
+      ]
+    },
+    {
+      "id": "ds.mlops",
+      "name": "MLOps & Model Deployment",
+      "bloom_level": 5,
+      "estimated_hours": 12,
+      "difficulty": "advanced",
+      "family": "MLOps & Deployment",
+      "tags": [
+        "mlops"
+      ],
+      "prerequisites": [
+        "ds.cloud_for_ml",
+        "ds.transformers_nlp"
+      ],
+      "unlocks": [
+        "ds.ml_system_design"
+      ]
+    },
+    {
+      "id": "ds.ml_system_design",
+      "name": "ML System Design",
+      "bloom_level": 6,
+      "estimated_hours": 14,
+      "difficulty": "advanced",
+      "family": "MLOps & Deployment",
+      "tags": [
+        "design",
+        "stretch"
+      ],
+      "prerequisites": [
+        "ds.mlops"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "fs.html_css",
+      "name": "HTML & CSS Fundamentals",
+      "bloom_level": 2,
+      "estimated_hours": 12,
+      "difficulty": "beginner",
+      "family": "Frontend Development",
+      "tags": [
+        "frontend"
+      ],
+      "prerequisites": [
+        "fnd.computing_basics"
+      ],
+      "unlocks": [
+        "fs.responsive_design"
+      ]
+    },
+    {
+      "id": "fs.responsive_design",
+      "name": "Responsive & Accessible Design",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Frontend Development",
+      "tags": [
+        "frontend"
+      ],
+      "prerequisites": [
+        "fs.html_css"
+      ],
+      "unlocks": [
+        "fs.javascript_core"
+      ]
+    },
+    {
+      "id": "fs.javascript_core",
+      "name": "JavaScript Fundamentals",
+      "bloom_level": 2,
+      "estimated_hours": 16,
+      "difficulty": "beginner",
+      "family": "Frontend Development",
+      "tags": [
+        "programming",
+        "frontend"
+      ],
+      "prerequisites": [
+        "fs.responsive_design"
+      ],
+      "unlocks": [
+        "fs.dom_browser"
+      ]
+    },
+    {
+      "id": "fs.dom_browser",
+      "name": "DOM, Events & Browser APIs",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Frontend Development",
+      "tags": [
+        "frontend"
+      ],
+      "prerequisites": [
+        "fs.javascript_core"
+      ],
+      "unlocks": [
+        "fs.es6_async"
+      ]
+    },
+    {
+      "id": "fs.es6_async",
+      "name": "Modern JS: ES6+ & Asynchronous Patterns",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Frontend Development",
+      "tags": [
+        "programming",
+        "frontend"
+      ],
+      "prerequisites": [
+        "fs.dom_browser"
+      ],
+      "unlocks": [
+        "fs.node_express",
+        "fs.react_core"
+      ]
+    },
+    {
+      "id": "fs.react_core",
+      "name": "React Fundamentals",
+      "bloom_level": 3,
+      "estimated_hours": 14,
+      "difficulty": "intermediate",
+      "family": "Frontend Development",
+      "tags": [
+        "frontend"
+      ],
+      "prerequisites": [
+        "fs.es6_async"
+      ],
+      "unlocks": [
+        "fs.react_hooks_state"
+      ]
+    },
+    {
+      "id": "fs.react_hooks_state",
+      "name": "React Hooks & State Management",
+      "bloom_level": 4,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Frontend Development",
+      "tags": [
+        "frontend"
+      ],
+      "prerequisites": [
+        "fs.react_core"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "fs.node_express",
+      "name": "Node.js & Express Fundamentals",
+      "bloom_level": 3,
+      "estimated_hours": 12,
+      "difficulty": "intermediate",
+      "family": "Backend Development",
+      "tags": [
+        "backend"
+      ],
+      "prerequisites": [
+        "fs.es6_async"
+      ],
+      "unlocks": [
+        "fs.rest_apis_node"
+      ]
+    },
+    {
+      "id": "fs.rest_apis_node",
+      "name": "REST API Development with Node",
+      "bloom_level": 4,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Backend Development",
+      "tags": [
+        "backend"
+      ],
+      "prerequisites": [
+        "fs.node_express"
+      ],
+      "unlocks": [
+        "fs.nosql_mongo"
+      ]
+    },
+    {
+      "id": "fs.nosql_mongo",
+      "name": "MongoDB & NoSQL Fundamentals",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Data & Databases",
+      "tags": [
+        "data"
+      ],
+      "prerequisites": [
+        "fs.rest_apis_node"
+      ],
+      "unlocks": [
+        "fs.auth_security"
+      ]
+    },
+    {
+      "id": "fs.auth_security",
+      "name": "Authentication & Authorization",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Backend Development",
+      "tags": [
+        "backend",
+        "security"
+      ],
+      "prerequisites": [
+        "fs.nosql_mongo"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "fs.git_collab",
+      "name": "Git Collaboration Workflows",
+      "bloom_level": 3,
+      "estimated_hours": 5,
+      "difficulty": "intermediate",
+      "family": "Tools & Collaboration",
+      "tags": [
+        "tools",
+        "collaboration"
+      ],
+      "prerequisites": [
+        "fnd.git_basics"
+      ],
+      "unlocks": [
+        "fs.deployment_cicd"
+      ]
+    },
+    {
+      "id": "fs.deployment_cicd",
+      "name": "Deployment & CI/CD Basics",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "DevOps & Platform",
+      "tags": [
+        "devops"
+      ],
+      "prerequisites": [
+        "fs.git_collab"
+      ],
+      "unlocks": [
+        "fs.frontend_perf_testing"
+      ]
+    },
+    {
+      "id": "fs.frontend_perf_testing",
+      "name": "Frontend Performance & Testing",
+      "bloom_level": 5,
+      "estimated_hours": 8,
+      "difficulty": "advanced",
+      "family": "Software Quality",
+      "tags": [
+        "frontend",
+        "quality"
+      ],
+      "prerequisites": [
+        "fs.deployment_cicd"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "apt.quant_arithmetic",
+      "name": "Quantitative Aptitude: Arithmetic",
+      "bloom_level": 2,
+      "estimated_hours": 10,
+      "difficulty": "beginner",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "placement"
+      ],
+      "prerequisites": [],
+      "unlocks": [
+        "apt.quant_algebra_geometry"
+      ]
+    },
+    {
+      "id": "apt.quant_algebra_geometry",
+      "name": "Quantitative Aptitude: Algebra & Geometry",
+      "bloom_level": 3,
+      "estimated_hours": 10,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.quant_arithmetic"
+      ],
+      "unlocks": [
+        "apt.logical_patterns",
+        "apt.mock_test_strategy"
+      ]
+    },
+    {
+      "id": "apt.logical_patterns",
+      "name": "Logical Reasoning: Patterns & Sequences",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.quant_algebra_geometry"
+      ],
+      "unlocks": [
+        "apt.logical_puzzles"
+      ]
+    },
+    {
+      "id": "apt.logical_puzzles",
+      "name": "Logical Reasoning: Puzzles & Arrangements",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.logical_patterns"
+      ],
+      "unlocks": [
+        "apt.mock_test_strategy"
+      ]
+    },
+    {
+      "id": "apt.verbal_grammar",
+      "name": "Verbal Ability: Grammar & Vocabulary",
+      "bloom_level": 2,
+      "estimated_hours": 8,
+      "difficulty": "beginner",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "communication"
+      ],
+      "prerequisites": [
+        "fnd.communication_basics"
+      ],
+      "unlocks": [
+        "apt.email_writing",
+        "apt.verbal_comprehension"
+      ]
+    },
+    {
+      "id": "apt.verbal_comprehension",
+      "name": "Verbal Ability: Reading Comprehension",
+      "bloom_level": 3,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "communication"
+      ],
+      "prerequisites": [
+        "apt.verbal_grammar"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "apt.email_writing",
+      "name": "Email & Professional Writing",
+      "bloom_level": 3,
+      "estimated_hours": 4,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "communication",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.verbal_grammar"
+      ],
+      "unlocks": [
+        "apt.gd_hr"
+      ]
+    },
+    {
+      "id": "apt.gd_hr",
+      "name": "Group Discussion & HR Interview Skills",
+      "bloom_level": 4,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "communication",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.email_writing"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "apt.resume_linkedin",
+      "name": "Resume Building & LinkedIn Optimization",
+      "bloom_level": 3,
+      "estimated_hours": 5,
+      "difficulty": "intermediate",
+      "family": "Career Readiness",
+      "tags": [
+        "career",
+        "placement"
+      ],
+      "prerequisites": [
+        "fnd.communication_basics"
+      ],
+      "unlocks": [
+        "apt.star_behavioral"
+      ]
+    },
+    {
+      "id": "apt.star_behavioral",
+      "name": "Behavioral Interviews & STAR Technique",
+      "bloom_level": 4,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Career Readiness",
+      "tags": [
+        "communication",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.resume_linkedin"
+      ],
+      "unlocks": [
+        "apt.mock_test_strategy"
+      ]
+    },
+    {
+      "id": "apt.mock_test_strategy",
+      "name": "Mock Test Strategy & Time Management",
+      "bloom_level": 4,
+      "estimated_hours": 5,
+      "difficulty": "intermediate",
+      "family": "Aptitude & Placement",
+      "tags": [
+        "aptitude",
+        "placement"
+      ],
+      "prerequisites": [
+        "apt.logical_puzzles",
+        "apt.quant_algebra_geometry",
+        "apt.star_behavioral"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "bridge.math_refresher",
+      "name": "Mathematics Refresher for Tech Careers",
+      "bloom_level": 2,
+      "estimated_hours": 10,
+      "difficulty": "beginner",
+      "family": "Bridge & Re-skilling",
+      "tags": [
+        "foundation",
+        "mathematics",
+        "bridge"
+      ],
+      "prerequisites": [],
+      "unlocks": [
+        "bridge.stats_for_business"
+      ]
+    },
+    {
+      "id": "bridge.stats_for_business",
+      "name": "Statistics for Business & Analytics",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Bridge & Re-skilling",
+      "tags": [
+        "statistics",
+        "bridge"
+      ],
+      "prerequisites": [
+        "bridge.math_refresher"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "bridge.cs_concepts_bridge",
+      "name": "Core CS Concepts Bridge (for non-CS graduates)",
+      "bloom_level": 2,
+      "estimated_hours": 12,
+      "difficulty": "beginner",
+      "family": "Bridge & Re-skilling",
+      "tags": [
+        "foundation",
+        "bridge"
+      ],
+      "prerequisites": [
+        "fnd.computing_basics"
+      ],
+      "unlocks": [
+        "bridge.portfolio_projects"
+      ]
+    },
+    {
+      "id": "bridge.portfolio_projects",
+      "name": "Project Portfolio Building",
+      "bloom_level": 5,
+      "estimated_hours": 14,
+      "difficulty": "advanced",
+      "family": "Career Readiness",
+      "tags": [
+        "career",
+        "projects"
+      ],
+      "prerequisites": [
+        "bridge.cs_concepts_bridge"
+      ],
+      "unlocks": [
+        "bridge.opensource_basics"
+      ]
+    },
+    {
+      "id": "bridge.opensource_basics",
+      "name": "Open Source Contribution Basics",
+      "bloom_level": 4,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Tools & Collaboration",
+      "tags": [
+        "collaboration",
+        "career"
+      ],
+      "prerequisites": [
+        "bridge.portfolio_projects"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "xtra.cloud_computing",
+      "name": "Cloud Computing Fundamentals",
+      "bloom_level": 3,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "Cloud & Platform",
+      "tags": [
+        "cloud"
+      ],
+      "prerequisites": [
+        "fnd.computing_basics"
+      ],
+      "unlocks": [
+        "xtra.docker_containers"
+      ]
+    },
+    {
+      "id": "xtra.docker_containers",
+      "name": "Docker & Containers Basics",
+      "bloom_level": 4,
+      "estimated_hours": 8,
+      "difficulty": "intermediate",
+      "family": "DevOps & Platform",
+      "tags": [
+        "devops",
+        "cloud"
+      ],
+      "prerequisites": [
+        "xtra.cloud_computing"
+      ],
+      "unlocks": [
+        "xtra.kubernetes_basics"
+      ]
+    },
+    {
+      "id": "xtra.kubernetes_basics",
+      "name": "Kubernetes Fundamentals",
+      "bloom_level": 5,
+      "estimated_hours": 10,
+      "difficulty": "advanced",
+      "family": "DevOps & Platform",
+      "tags": [
+        "devops",
+        "cloud",
+        "stretch"
+      ],
+      "prerequisites": [
+        "xtra.docker_containers"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "xtra.technical_writing",
+      "name": "Technical Writing & Documentation",
+      "bloom_level": 3,
+      "estimated_hours": 4,
+      "difficulty": "intermediate",
+      "family": "Communication",
+      "tags": [
+        "communication"
+      ],
+      "prerequisites": [
+        "fnd.communication_basics"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "xtra.genai_prompting",
+      "name": "Generative AI Prompt Engineering",
+      "bloom_level": 3,
+      "estimated_hours": 6,
+      "difficulty": "intermediate",
+      "family": "Emerging Tech",
+      "tags": [
+        "genai"
+      ],
+      "prerequisites": [
+        "fnd.prog_logic"
+      ],
+      "unlocks": [
+        "xtra.llm_apps_langchain"
+      ]
+    },
+    {
+      "id": "xtra.llm_apps_langchain",
+      "name": "Building LLM Apps with LangChain",
+      "bloom_level": 5,
+      "estimated_hours": 12,
+      "difficulty": "advanced",
+      "family": "Emerging Tech",
+      "tags": [
+        "genai",
+        "stretch"
+      ],
+      "prerequisites": [
+        "xtra.genai_prompting"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "xtra.industry_awareness",
+      "name": "Industry Trends & Tech Awareness",
+      "bloom_level": 2,
+      "estimated_hours": 3,
+      "difficulty": "beginner",
+      "family": "Career Readiness",
+      "tags": [
+        "career"
+      ],
+      "prerequisites": [
+        "fnd.communication_basics"
+      ],
+      "unlocks": []
+    },
+    {
+      "id": "xtra.email_etiquette_teamwork",
+      "name": "Email Etiquette & Remote Teamwork",
+      "bloom_level": 2,
+      "estimated_hours": 3,
+      "difficulty": "beginner",
+      "family": "Communication",
+      "tags": [
+        "softskills"
+      ],
+      "prerequisites": [
+        "fnd.communication_basics"
+      ],
+      "unlocks": []
+    }
+  ],
+  "edges": [
+    {
+      "from": "fnd.computing_basics",
+      "to": "fnd.typing_tools"
+    },
+    {
+      "from": "fnd.computing_basics",
+      "to": "fnd.prog_logic"
+    },
+    {
+      "from": "fnd.computing_basics",
+      "to": "da.excel_analysis"
+    },
+    {
+      "from": "fnd.computing_basics",
+      "to": "fs.html_css"
+    },
+    {
+      "from": "fnd.computing_basics",
+      "to": "bridge.cs_concepts_bridge"
+    },
+    {
+      "from": "fnd.computing_basics",
+      "to": "xtra.cloud_computing"
+    },
+    {
+      "from": "fnd.typing_tools",
+      "to": "fnd.git_basics"
+    },
+    {
+      "from": "fnd.prog_logic",
+      "to": "sde.python_core"
+    },
+    {
+      "from": "fnd.prog_logic",
+      "to": "da.python_pandas"
+    },
+    {
+      "from": "fnd.prog_logic",
+      "to": "cap.java_core"
+    },
+    {
+      "from": "fnd.prog_logic",
+      "to": "ds.python_for_ds"
+    },
+    {
+      "from": "fnd.prog_logic",
+      "to": "xtra.genai_prompting"
+    },
+    {
+      "from": "fnd.git_basics",
+      "to": "fnd.communication_basics"
+    },
+    {
+      "from": "fnd.git_basics",
+      "to": "fs.git_collab"
+    },
+    {
+      "from": "fnd.communication_basics",
+      "to": "cap.agile_scrum"
+    },
+    {
+      "from": "fnd.communication_basics",
+      "to": "apt.verbal_grammar"
+    },
+    {
+      "from": "fnd.communication_basics",
+      "to": "apt.resume_linkedin"
+    },
+    {
+      "from": "fnd.communication_basics",
+      "to": "xtra.technical_writing"
+    },
+    {
+      "from": "fnd.communication_basics",
+      "to": "xtra.industry_awareness"
+    },
+    {
+      "from": "fnd.communication_basics",
+      "to": "xtra.email_etiquette_teamwork"
+    },
+    {
+      "from": "sde.python_core",
+      "to": "sde.control_flow"
+    },
+    {
+      "from": "sde.control_flow",
+      "to": "sde.oop"
+    },
+    {
+      "from": "sde.control_flow",
+      "to": "sde.dbms_sql"
+    },
+    {
+      "from": "sde.control_flow",
+      "to": "sde.os_basics"
+    },
+    {
+      "from": "sde.oop",
+      "to": "sde.arrays_strings"
+    },
+    {
+      "from": "sde.oop",
+      "to": "sde.lld_design_patterns"
+    },
+    {
+      "from": "sde.arrays_strings",
+      "to": "sde.complexity"
+    },
+    {
+      "from": "sde.complexity",
+      "to": "sde.recursion"
+    },
+    {
+      "from": "sde.recursion",
+      "to": "sde.linked_lists"
+    },
+    {
+      "from": "sde.recursion",
+      "to": "sde.dynamic_programming"
+    },
+    {
+      "from": "sde.linked_lists",
+      "to": "sde.stacks_queues"
+    },
+    {
+      "from": "sde.stacks_queues",
+      "to": "sde.hashing"
+    },
+    {
+      "from": "sde.hashing",
+      "to": "sde.trees"
+    },
+    {
+      "from": "sde.trees",
+      "to": "sde.heaps"
+    },
+    {
+      "from": "sde.heaps",
+      "to": "sde.graphs"
+    },
+    {
+      "from": "sde.graphs",
+      "to": "sde.sorting_searching"
+    },
+    {
+      "from": "sde.sorting_searching",
+      "to": "sde.greedy"
+    },
+    {
+      "from": "sde.greedy",
+      "to": "sde.dynamic_programming"
+    },
+    {
+      "from": "sde.dynamic_programming",
+      "to": "sde.advanced_patterns"
+    },
+    {
+      "from": "sde.dynamic_programming",
+      "to": "sde.competitive_patterns"
+    },
+    {
+      "from": "sde.dbms_sql",
+      "to": "sde.rest_apis"
+    },
+    {
+      "from": "sde.os_basics",
+      "to": "sde.networks_basics"
+    },
+    {
+      "from": "sde.networks_basics",
+      "to": "sde.lld_design_patterns"
+    },
+    {
+      "from": "sde.networks_basics",
+      "to": "sde.hld_system_design"
+    },
+    {
+      "from": "sde.lld_design_patterns",
+      "to": "sde.rest_apis"
+    },
+    {
+      "from": "sde.lld_design_patterns",
+      "to": "sde.hld_system_design"
+    },
+    {
+      "from": "sde.rest_apis",
+      "to": "sde.hld_system_design"
+    },
+    {
+      "from": "sde.hld_system_design",
+      "to": "sde.testing_fundamentals"
+    },
+    {
+      "from": "sde.hld_system_design",
+      "to": "sde.scalability_patterns"
+    },
+    {
+      "from": "da.excel_analysis",
+      "to": "da.sql_fundamentals"
+    },
+    {
+      "from": "da.sql_fundamentals",
+      "to": "da.sql_joins_agg"
+    },
+    {
+      "from": "da.sql_joins_agg",
+      "to": "da.advanced_sql"
+    },
+    {
+      "from": "da.python_pandas",
+      "to": "da.data_cleaning"
+    },
+    {
+      "from": "da.data_cleaning",
+      "to": "da.descriptive_stats"
+    },
+    {
+      "from": "da.descriptive_stats",
+      "to": "da.inferential_stats"
+    },
+    {
+      "from": "da.descriptive_stats",
+      "to": "da.business_metrics"
+    },
+    {
+      "from": "da.inferential_stats",
+      "to": "da.visualization_principles"
+    },
+    {
+      "from": "da.visualization_principles",
+      "to": "da.viz_tools"
+    },
+    {
+      "from": "da.viz_tools",
+      "to": "da.bi_tools"
+    },
+    {
+      "from": "da.bi_tools",
+      "to": "da.storytelling"
+    },
+    {
+      "from": "da.storytelling",
+      "to": "da.ab_testing"
+    },
+    {
+      "from": "cap.java_core",
+      "to": "cap.java_oop"
+    },
+    {
+      "from": "cap.java_oop",
+      "to": "cap.collections_generics"
+    },
+    {
+      "from": "cap.collections_generics",
+      "to": "cap.exceptions_io"
+    },
+    {
+      "from": "cap.exceptions_io",
+      "to": "cap.dbms_normalization"
+    },
+    {
+      "from": "cap.dbms_normalization",
+      "to": "cap.jdbc_db"
+    },
+    {
+      "from": "cap.jdbc_db",
+      "to": "cap.spring_core"
+    },
+    {
+      "from": "cap.spring_core",
+      "to": "cap.spring_boot_rest"
+    },
+    {
+      "from": "cap.spring_boot_rest",
+      "to": "cap.networks_enterprise"
+    },
+    {
+      "from": "cap.agile_scrum",
+      "to": "cap.junit_testing"
+    },
+    {
+      "from": "cap.junit_testing",
+      "to": "cap.cloud_fundamentals"
+    },
+    {
+      "from": "cap.cloud_fundamentals",
+      "to": "cap.genai_basics"
+    },
+    {
+      "from": "cap.genai_basics",
+      "to": "cap.client_comm"
+    },
+    {
+      "from": "ds.python_for_ds",
+      "to": "ds.linear_algebra"
+    },
+    {
+      "from": "ds.linear_algebra",
+      "to": "ds.probability_stats"
+    },
+    {
+      "from": "ds.linear_algebra",
+      "to": "ds.neural_networks"
+    },
+    {
+      "from": "ds.probability_stats",
+      "to": "ds.eda"
+    },
+    {
+      "from": "ds.probability_stats",
+      "to": "ds.regression"
+    },
+    {
+      "from": "ds.eda",
+      "to": "ds.feature_engineering"
+    },
+    {
+      "from": "ds.eda",
+      "to": "ds.cloud_for_ml"
+    },
+    {
+      "from": "ds.feature_engineering",
+      "to": "ds.regression"
+    },
+    {
+      "from": "ds.regression",
+      "to": "ds.classification"
+    },
+    {
+      "from": "ds.classification",
+      "to": "ds.model_evaluation"
+    },
+    {
+      "from": "ds.model_evaluation",
+      "to": "ds.clustering"
+    },
+    {
+      "from": "ds.clustering",
+      "to": "ds.ensemble_methods"
+    },
+    {
+      "from": "ds.ensemble_methods",
+      "to": "ds.neural_networks"
+    },
+    {
+      "from": "ds.neural_networks",
+      "to": "ds.cnn"
+    },
+    {
+      "from": "ds.cnn",
+      "to": "ds.transformers_nlp"
+    },
+    {
+      "from": "ds.transformers_nlp",
+      "to": "ds.mlops"
+    },
+    {
+      "from": "ds.cloud_for_ml",
+      "to": "ds.mlops"
+    },
+    {
+      "from": "ds.mlops",
+      "to": "ds.ml_system_design"
+    },
+    {
+      "from": "fs.html_css",
+      "to": "fs.responsive_design"
+    },
+    {
+      "from": "fs.responsive_design",
+      "to": "fs.javascript_core"
+    },
+    {
+      "from": "fs.javascript_core",
+      "to": "fs.dom_browser"
+    },
+    {
+      "from": "fs.dom_browser",
+      "to": "fs.es6_async"
+    },
+    {
+      "from": "fs.es6_async",
+      "to": "fs.react_core"
+    },
+    {
+      "from": "fs.es6_async",
+      "to": "fs.node_express"
+    },
+    {
+      "from": "fs.react_core",
+      "to": "fs.react_hooks_state"
+    },
+    {
+      "from": "fs.node_express",
+      "to": "fs.rest_apis_node"
+    },
+    {
+      "from": "fs.rest_apis_node",
+      "to": "fs.nosql_mongo"
+    },
+    {
+      "from": "fs.nosql_mongo",
+      "to": "fs.auth_security"
+    },
+    {
+      "from": "fs.git_collab",
+      "to": "fs.deployment_cicd"
+    },
+    {
+      "from": "fs.deployment_cicd",
+      "to": "fs.frontend_perf_testing"
+    },
+    {
+      "from": "apt.quant_arithmetic",
+      "to": "apt.quant_algebra_geometry"
+    },
+    {
+      "from": "apt.quant_algebra_geometry",
+      "to": "apt.logical_patterns"
+    },
+    {
+      "from": "apt.quant_algebra_geometry",
+      "to": "apt.mock_test_strategy"
+    },
+    {
+      "from": "apt.logical_patterns",
+      "to": "apt.logical_puzzles"
+    },
+    {
+      "from": "apt.logical_puzzles",
+      "to": "apt.mock_test_strategy"
+    },
+    {
+      "from": "apt.verbal_grammar",
+      "to": "apt.verbal_comprehension"
+    },
+    {
+      "from": "apt.verbal_grammar",
+      "to": "apt.email_writing"
+    },
+    {
+      "from": "apt.email_writing",
+      "to": "apt.gd_hr"
+    },
+    {
+      "from": "apt.resume_linkedin",
+      "to": "apt.star_behavioral"
+    },
+    {
+      "from": "apt.star_behavioral",
+      "to": "apt.mock_test_strategy"
+    },
+    {
+      "from": "bridge.math_refresher",
+      "to": "bridge.stats_for_business"
+    },
+    {
+      "from": "bridge.cs_concepts_bridge",
+      "to": "bridge.portfolio_projects"
+    },
+    {
+      "from": "bridge.portfolio_projects",
+      "to": "bridge.opensource_basics"
+    },
+    {
+      "from": "xtra.cloud_computing",
+      "to": "xtra.docker_containers"
+    },
+    {
+      "from": "xtra.docker_containers",
+      "to": "xtra.kubernetes_basics"
+    },
+    {
+      "from": "xtra.genai_prompting",
+      "to": "xtra.llm_apps_langchain"
+    }
+  ]
+}

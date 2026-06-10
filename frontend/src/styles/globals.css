@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f9fc;
+  color: #0b1f33;
+}
+
+/* Bento grid: a strict, even N x N rhythm so every panel lines up regardless
+   of how much content it holds - cards manage their own internal scroll. */
+.bento-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.bento-card {
+  background: #ffffff;
+  border: 1px solid #d7e4ed;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 2px rgba(11, 31, 51, 0.06), 0 8px 24px -12px rgba(0, 112, 173, 0.18);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 6px rgba(11, 31, 51, 0.08), 0 18px 38px -16px rgba(0, 112, 173, 0.32);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #b9d3e3;
+  border-radius: 999px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+.dash-flow {
+  stroke-dasharray: 6 6;
+  animation: dash-flow 1.4s linear infinite;
+}
+
+/* Celebration burst - confetti pieces fall and tumble past the viewport,
+   each one timed and positioned by an inline style the component computes
+   once per burst so two learners (or two passes) never see the same fall. */
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--drift, 0px), 112vh, 0) rotate(var(--spin, 540deg));
+    opacity: 0.15;
+  }
+}
+.confetti-piece {
+  animation-name: confetti-fall;
+  animation-timing-function: cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Balloons drift upward with a gentle side-to-side sway - the slower,
+   warmer half of the celebration, meant to linger after the confetti has
+   already cleared the screen. */
+@keyframes balloon-rise {
+  0% {
+    transform: translate3d(0, 14vh, 0) rotate(-4deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(var(--sway, 18px), -52vh, 0) rotate(4deg);
+  }
+  100% {
+    transform: translate3d(0, -118vh, 0) rotate(-4deg);
+    opacity: 0;
+  }
+}
+.balloon-piece {
+  animation-name: balloon-rise;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Sparks - short bright streaks that shoot outward from a scattered set of
+   origins and burn out before they reach the edge. The extra flourish kept
+   in reserve for the rarer, higher-band wins: confetti and balloons already
+   say "you cleared it"; sparks are what says "that one was a strong one". */
+@keyframes spark-burst {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.3) rotate(var(--spark-rotate, 0deg));
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--spark-x, 0px), var(--spark-y, 0px), 0) scale(1.1) rotate(var(--spark-rotate, 0deg));
+    opacity: 0;
+  }
+}
+.spark-piece {
+  animation-name: spark-burst;
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* ── Gamification Reward Orchestrator animations ─────────────────────────────
+   All classes below are consumed exclusively by GamificationReward.js.
+   Inline style props on each element carry the per-instance timing values
+   (delay, duration) so the classes stay thin - just the keyframe name,
+   curve, and iteration count. */
+
+/* Firework ring - a bordered circle that expands from a fixed corner position
+   and fades as it hits full size. Four rings, one per screen corner, each
+   staggered 0.2s apart via inline animationDelay. */
+@keyframes firework-ring {
+  0%   { transform: scale(0.04); opacity: 1;   border-width: 8px; }
+  55%  { opacity: 0.7;  border-width: 3px; }
+  100% { transform: scale(1);    opacity: 0;   border-width: 1px; }
+}
+.firework-ring {
+  animation-name: firework-ring;
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  border-style: solid;
+}
+
+/* Trophy pendulum - the trophy swings left and right with a slight vertical
+   lift at the midpoint, looping continuously throughout the celebration. */
+@keyframes trophy-pendulum {
+  0%   { transform: rotate(-14deg); }
+  25%  { transform: rotate(0deg) translateY(-5px); }
+  50%  { transform: rotate(14deg); }
+  75%  { transform: rotate(0deg) translateY(-5px); }
+  100% { transform: rotate(-14deg); }
+}
+.trophy-pendulum {
+  animation: trophy-pendulum 1.3s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: top center;
+}
+
+/* Sparkle pulse - sparkle and star characters that scale in, hold, then
+   scale back to nothing, looping continuously. The delay and duration are
+   set per-element via inline animationDelay and animationDuration. */
+@keyframes sparkle-pulse {
+  0%   { transform: scale(0) rotate(0deg);   opacity: 0; }
+  35%  { transform: scale(1) rotate(80deg);  opacity: 1; }
+  65%  { transform: scale(1) rotate(100deg); opacity: 1; }
+  100% { transform: scale(0) rotate(180deg); opacity: 0; }
+}
+.sparkle-pulse {
+  animation-name: sparkle-pulse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+/* Congratulations shimmer - cycles the heading gradient from gold through
+   pink, purple, and blue and back. Spec gradient: #FFD93D, #FF6B6B,
+   #CC5DE8, #4D96FF at a 3-second cycle. */
+@keyframes congrats-shimmer {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+.congrats-shimmer {
+  background: linear-gradient(90deg, #FFD93D, #FF6B6B, #CC5DE8, #4D96FF, #FFD93D);
+  background-size: 280% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: congrats-shimmer 3s ease infinite;
+}
+
+/* Reward card enter - the modal card slides up from slightly below center
+   and reaches its resting position over 0.45s. */
+@keyframes reward-card-enter {
+  0%   { opacity: 0; transform: translateY(20px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+.reward-card-enter {
+  animation: reward-card-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

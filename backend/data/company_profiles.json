@@ -1,0 +1,77 @@
+{
+  "cap_exceller": {
+    "display_name": "Capgemini Exceller",
+    "summary": "Capgemini's campus assessment: scenario-based technical screening plus a structured behavioural round, weighted toward problem-solving depth and clear communication.",
+    "sections": [
+      { "key": "technical_coding", "label": "Technical Coding", "weight": 0.4, "focus_tags": ["dsa", "programming", "backend"] },
+      { "key": "scenario_based", "label": "Scenario-Based Problem Solving", "weight": 0.3, "focus_tags": ["design", "business"] },
+      { "key": "behavioral", "label": "Behavioural / STAR Round", "weight": 0.3, "focus_tags": ["communication", "placement"] }
+    ],
+    "rubric": "STAR_format",
+    "source_note": "Pattern synthesised from publicly discussed Capgemini Exceller prep experiences - treat exact weightings as indicative, not officially published.",
+    "confidence": "indicative"
+  },
+  "tcs_nqt": {
+    "display_name": "TCS NQT (National Qualifier Test)",
+    "summary": "A timed aptitude-led test: verbal, numerical and reasoning sections followed by a short coding segment.",
+    "sections": [
+      { "key": "verbal", "label": "Verbal Ability", "question_count": 15, "minutes": 12, "focus_tags": ["aptitude", "communication"] },
+      { "key": "numerical", "label": "Numerical Ability", "question_count": 10, "minutes": 12, "focus_tags": ["aptitude", "mathematics"] },
+      { "key": "reasoning", "label": "Reasoning Ability", "question_count": 14, "minutes": 12, "focus_tags": ["aptitude"] },
+      { "key": "coding", "label": "Coding", "question_count": 2, "minutes": 12, "focus_tags": ["programming", "dsa"] }
+    ],
+    "time_limit_minutes": 48,
+    "cutoff_note": "approx. 65pct band commonly cited by aspirants - unverified, label as indicative only",
+    "source_note": "Section layout aligned to widely-reported TCS NQT structure; cutoff is unverified and shown to learners with an uncertainty flag.",
+    "confidence": "indicative"
+  },
+  "infytq": {
+    "display_name": "InfyTQ Certification",
+    "summary": "Infosys's certification-style assessment covering programming fundamentals and an advanced track, MCQ and lab-based.",
+    "sections": [
+      { "key": "fundamentals", "label": "Programming Fundamentals", "focus_tags": ["programming", "foundation"] },
+      { "key": "advanced", "label": "Advanced Programming", "focus_tags": ["dsa", "programming"] }
+    ],
+    "cutoff_official": 0.65,
+    "source_note": "65pct certification threshold is published in Infosys's official InfyTQ examination guidelines.",
+    "confidence": "officially published"
+  },
+  "wipro_nlth": {
+    "display_name": "Wipro NLTH (National Level Talent Hunt)",
+    "summary": "Written English, aptitude and coding sections, with an emphasis on workplace-English clarity alongside technical screening.",
+    "sections": [
+      { "key": "written_english", "label": "Written English", "focus_tags": ["communication", "aptitude"] },
+      { "key": "aptitude", "label": "Aptitude", "focus_tags": ["aptitude", "mathematics"] },
+      { "key": "coding", "label": "Coding", "focus_tags": ["programming", "dsa"] }
+    ],
+    "cutoff_note": "unverified - shown to learners with an uncertainty flag",
+    "source_note": "Section composition aligned to widely-reported Wipro NLTH structure; cutoff is unverified.",
+    "confidence": "indicative"
+  },
+  "accenture_asset": {
+    "display_name": "Accenture ASSET",
+    "summary": "Accenture's campus screen: a timed aptitude block (verbal, reasoning, pseudocode) followed by a technical and an HR round for those who clear it.",
+    "sections": [
+      { "key": "verbal", "label": "English / Verbal", "focus_tags": ["aptitude", "communication"] },
+      { "key": "reasoning", "label": "Quantitative & Logical Reasoning", "focus_tags": ["aptitude", "mathematics"] },
+      { "key": "pseudocode", "label": "Pseudocode / Technical MCQ", "focus_tags": ["programming", "dsa"] },
+      { "key": "hr", "label": "Technical + HR Round", "focus_tags": ["communication", "placement"] }
+    ],
+    "cutoff_note": "unverified - shown to learners with an uncertainty flag",
+    "source_note": "Section layout aligned to widely-reported Accenture ASSET structure; cutoff is unverified and shown with an uncertainty flag.",
+    "confidence": "indicative"
+  },
+  "cognizant_genc": {
+    "display_name": "Cognizant GenC",
+    "summary": "Cognizant's entry-level hiring track: an aptitude and coding assessment, then an automata-style technical round and an HR conversation.",
+    "sections": [
+      { "key": "aptitude", "label": "Aptitude & Reasoning", "focus_tags": ["aptitude", "mathematics"] },
+      { "key": "coding", "label": "Coding Assessment", "focus_tags": ["programming", "dsa"] },
+      { "key": "technical", "label": "Technical Round", "focus_tags": ["dsa", "programming", "backend"] },
+      { "key": "hr", "label": "HR Round", "focus_tags": ["communication", "placement"] }
+    ],
+    "cutoff_note": "unverified - shown to learners with an uncertainty flag",
+    "source_note": "Section composition aligned to widely-reported Cognizant GenC structure; cutoff is unverified and shown with an uncertainty flag.",
+    "confidence": "indicative"
+  }
+}
